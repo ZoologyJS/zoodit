@@ -1,0 +1,46 @@
+:root {
+  --main-black: #030303;
+  --dark-grey: #161617;
+  --lighter-grey: #343536;
+  --light-grey: #828384;
+}
+
+.inf-card {
+  background-color: var(--dark-grey);
+  color: lightgray;
+  border: 1px solid var(--lighter-grey);
+  margin: 3em;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+body {
+  background-color: var(--main-black);
+}
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.bottom-buttons-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-title {
+  font-size: 72px;
+}
+
+img:hover, i:hover, h5:hover, h1:hover {
+  cursor: pointer;
+}
+
+
+::selection {
+    color: none;
+    background: none;
+}
+
