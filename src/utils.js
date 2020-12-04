@@ -1,3 +1,9 @@
+// Grabs a random photo and sizes it according to passed in height and width parameters
+export const fetchPhoto = async (width, height) => {
+    const response = await fetch(`https://picsum.photos/${width}/${height}`);
+    const blob = await response.blob();
+    return URL.createObjectURL(blob);
+}
 
 // Gets a random username from the list of 80
 export const getRandUsername = () => {

@@ -19,6 +19,8 @@
   margin: 3em;
   border-radius: 5px;
   padding: 20px;
+  /* opacity: 0%; */
+  /* transition: opacity 700ms; */
 }
 
 body {
@@ -49,7 +51,7 @@ body {
 }
 
 .like-button {
-  animation: like-animation 400ms;
+  animation: like-animation 300ms;
 }
 
 @keyframes like-animation {
