@@ -8,14 +8,14 @@ export const LowerCardButtons = () => {
 
     // Handles the visual formatting of the like button
     const likeHandler = () => {
-        setLiked(!liked);
         if (liked){
-            likeButtonReference.current.style.color = "lightgray";
-            likeButtonReference.current.classList.remove("like-button")
-        } else {
             likeButtonReference.current.style.color = "green";
             likeButtonReference.current.classList.add("like-button")
+        } else {
+            likeButtonReference.current.style.color = "lightgray";
+            likeButtonReference.current.classList.remove("like-button")
         }
+        setLiked(!liked);
     }
 
     // Social buttons at the bottom of each card 

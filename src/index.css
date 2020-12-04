@@ -2,7 +2,6 @@
   .removeOnMobile {
       font-size: 0px !important;
   }
-
 }
 
 /* Colors for theme */
@@ -53,10 +52,6 @@ body {
   animation: like-animation 400ms;
 }
 
-/* .like-button-transition {
-  transform: scale(1.5);
-} */
-
 @keyframes like-animation {
   0% {transform: scale(1)}
   50% {transform: scale(1.2)}
@@ -67,9 +62,7 @@ img:hover, i:hover, h5:hover, h1:hover {
   cursor: pointer;
 }
 
-
 ::selection {
     color: none;
     background: none;
 }
-
