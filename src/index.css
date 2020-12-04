@@ -49,6 +49,20 @@ body {
   font-size: 72px;
 }
 
+.like-button {
+  animation: like-animation 400ms;
+}
+
+/* .like-button-transition {
+  transform: scale(1.5);
+} */
+
+@keyframes like-animation {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.2)}
+  100% {transform: scale(1)}
+}
+
 img:hover, i:hover, h5:hover, h1:hover {
   cursor: pointer;
 }

@@ -35,16 +35,16 @@ const DataCard = () => {
                     </Col>
                     <Col xs={8} style={{fontSize:"10px"}}>
                         <Row>
-                            <span>{username} { } • {randCred} { } cred</span>
+                            <span><b>{username} • {randCred} points</b></span>
                         </Row>
                         <Row>
-                            <span><i>Posted {randMinutes} minutes ago.</i></span>
+                            <span><i>Posted {randMinutes} minutes ago</i></span>
                         </Row>
                     </Col>
                 </div>
                 <img 
                     className="py-3"
-                    style={{height: "400px", width: "100%"}}
+                    style={{height: "100%", width: "100%"}}
                     src={postImg}
                 />
                 <LowerCardButtons className="py-2"/>
