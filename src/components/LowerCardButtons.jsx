@@ -18,7 +18,7 @@ export const LowerCardButtons = () => {
         }
     }
 
-    // Social buttons at the bottom of each card
+    // Social buttons at the bottom of each card 
     return (
         <div className="buttons-cont" style={{display: "flex"}}>
             <i ref={likeButtonReference} onClick={likeHandler} className="fas fa-thumbs-up pr-3"> <span className="bottom-buttons-font removeOnMobile">Like</span></i>
