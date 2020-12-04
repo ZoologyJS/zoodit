@@ -10,11 +10,11 @@ export const LowerCardButtons = () => {
     const likeHandler = () => {
         setLiked(!liked);
         if (liked){
-            likeButtonReference.current.style.color = "green";
-            likeButtonReference.current.classList.add("like-button")
-        } else {
             likeButtonReference.current.style.color = "lightgray";
             likeButtonReference.current.classList.remove("like-button")
+        } else {
+            likeButtonReference.current.style.color = "green";
+            likeButtonReference.current.classList.add("like-button")
         }
     }
 
