@@ -33,7 +33,7 @@ const DataCard = () => {
                             <img style={{height: "30px", width: "30px", borderRadius: "25px"}} src={userImg} />
                         </Row>
                     </Col>
-                    <Col xs={3} style={{fontSize:"10px"}}>
+                    <Col xs={8} style={{fontSize:"10px"}}>
                         <Row>
                             <span>{username} { } • {randCred} { } cred</span>
                         </Row>
