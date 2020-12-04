@@ -1,5 +1,5 @@
 @media (max-width:550px) {
-  i {
+  .removeOnMobile {
       font-size: 0px !important;
   }
 
@@ -36,6 +36,13 @@ body {
 
 .bottom-buttons-font {
   font-family: 'Poppins', sans-serif;
+}
+
+.sub-title {
+  width: 600px;
+  font-size: 36px;
+  color: white;
+  text-align: center;
 }
 
 .main-title {

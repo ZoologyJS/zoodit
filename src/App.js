@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="feed-container">
       <p className="main-title">Zoodit</p>
-      <h4>Infinitely Scrollable Images for You</h4>
+      <p className="sub-title">Infinitely Scrollable Images for You</p>
       <br />
       <InfiniteScroll
         dataLength={items.length}
