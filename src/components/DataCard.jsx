@@ -1,12 +1,7 @@
-import { useState, memo } from "react";
 import { Row, Col } from "react-bootstrap";
 import { LowerCardButtons } from "./LowerCardButtons";
 
 const DataCard = ({ cardMetadata }) => {
-    // const [userImg, setUserImage] = useState();
-    // const [postImg, setPostImage] = useState();
-    // const [randMinutes] = useState(Math.floor(Math.random() * 89))
-    // const [randCred] = useState(Math.floor(Math.random() * 998))
 
     return (
         <div className="inf-card">
