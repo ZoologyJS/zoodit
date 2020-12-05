@@ -8,10 +8,6 @@ const App = () => {
   const [hasMore, setHasMore] = useState(true);
   const [payload, setPayload] = useState([]);
 
-  useEffect(() => {
-    injectPayload();
-  }, [])
-
   // Handles checking and adding content to the feed
   const fetchMoreData = () => {
     if (payload >= 500) {
@@ -25,6 +21,11 @@ const App = () => {
     }, 200);
   };
 
+  // Run once on initial component mount
+  useEffect(() => {
+    injectPayload();
+  }, [])
+
   /* 
   ** Fetches payload data for the cards in groups, then returns them all at once.
   ** This helps prevent the unsuredness of when fetch requests will fulfill, and 
@@ -36,13 +37,13 @@ const App = () => {
       Promise.all([fetchPhoto(520, 400), fetchPhoto(30, 30)])
         .then(promises => { 
           setPayload(state => [...state, {
-            username: getRandUsername(),
-            postTitle: getRandPostTitle(),
-            randMinutes: Math.floor(Math.random() * 89),
-            randCred: Math.floor(Math.random() * 998),
-            userImg: promises[1],
-            postImg: promises[0]
-          }])
+            username: getRandUsername(),                  //  Grabs a random username from the list
+            postTitle: getRandPostTitle(),                //  Grabs a random post title from the list
+            randMinutes: Math.floor(Math.random() * 89),  //  Chooses a random integer from 1-89
+            randCred: Math.floor(Math.random() * 998),    //  Chooses a random integer from 1-998
+            userImg: promises[1],                         //  A returned image blob for the user's profile photo
+            postImg: promises[0]                          //  A returned image blob for the user's post photo
+          }])  
         })
     }
   }
